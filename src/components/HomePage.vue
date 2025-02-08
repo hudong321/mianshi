@@ -180,8 +180,8 @@
                Hystrix 提供熔断机制，实现服务隔离
           </van-collapse-item>
           <van-collapse-item title="Spring的特性" name="11">
-              1.IOC（控制反转）将创建对象的权利交由spring进行管理
-              2.DI（依赖注入）允许对象在不直接创建依赖的情况下使用，通过spring容器来管理这些依赖。
+              1.IOC（控制反转）将创建对象的权利交由spring进行管理<br>
+              2.DI（依赖注入）允许对象在不直接创建依赖的情况下使用，通过spring容器来管理这些依赖。<br>
               3.AOP（切面编程）不修改源代码的情况下对其进行增强，比如日志的记录。
           </van-collapse-item>
         </van-collapse>
@@ -229,11 +229,11 @@
                 在索引列上进行相关计算<br>
           </van-collapse-item>
           <van-collapse-item title="Mysql的引擎有哪些" name="3">
-                InnoDB；事务型存储引擎，并且有较高并发的读取效率<br>
-                MyISAM；不支持事务处理和行级锁，特点简单、快速、小巧<br>
-                MEMORY；存储引擎，存放在内存中，数据量小，读取块<br>
-                ARCHIVE；归档，有很好的压缩机制<br>
-                CSV；紧凑数据块，支持CSV格式数据文件，常用于其他软件或数据库中导入数据
+                InnoDB;事务型存储引擎，并且有较高并发的读取效率<br>
+                MyISAM;不支持事务处理和行级锁，特点简单、快速、小巧<br>
+                MEMORY;存储引擎，存放在内存中，数据量小，读取块<br>
+                ARCHIVE;归档，有很好的压缩机制<br>
+                CSV;紧凑数据块,支持CSV格式数据文件,常用于其他软件或数据库中导入数据
           </van-collapse-item>
           <van-collapse-item title="聚簇索引与非聚簇索引" name="4">
                 聚簇索引指的是值与索引都是一样的，找到索引就找到值了，一般主键都是聚簇索引<br>
@@ -250,12 +250,12 @@
               3.之后的信息传输对token进验证
           </van-collapse-item>
            <van-collapse-item title="cookie和session的区别" name="3">
-              1.cookie是存储在客户端中，session存储在服务器中<br>
-              2.cookie可以在客户端中持久化存储，而对话结束后session会销毁<br>
-              3.cookie存储的数据量较小，而session可存储数据量大
+              1.cookie是存储在客户端中,session存储在服务器中<br>
+              2.cookie可以在客户端中持久化存储,而对话结束后session会销毁<br>
+              3.cookie存储的数据量较小,而session可存储数据量大
           </van-collapse-item>
           <van-collapse-item title="高并发时对系统的保护措施" name="4">
-              1.对服务器引入缓存机制;如redis，避免频繁访问数据库<br>
+              1.对服务器引入缓存机制;如redis,避免频繁访问数据库<br>
               2.网关上可以作限流或者降级处理<br>
               3.使用消息队列中间部件，实现削峰填谷
           </van-collapse-item>
