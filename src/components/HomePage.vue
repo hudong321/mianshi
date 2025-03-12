@@ -8,6 +8,7 @@
           <van-sidebar-item title="Redis相关" />
           <van-sidebar-item title="Mysql相关" />
           <van-sidebar-item title="VUE相关" />
+          <van-sidebar-item title="微服务相关" />
           <van-sidebar-item title="场景" />
         </van-sidebar>
       </van-col>
@@ -293,6 +294,22 @@
           </van-collapse-item>
         </van-collapse>
         <van-collapse v-show="active == 5" v-model="activeName" accordion>
+          <van-collapse-item title="springcloud的组件有哪些" name="1">
+               Eureka;服务注册与发现的核心组件，允许服务实例自动注册到注册中心，并通过服务名进行调用<br>
+               Ribbon;客户端负载均衡组件，负责从注册中心发现服务实例，并通过负载均衡算法选择实例，再通过HTTP协议进行通信<br>
+               Zuul;网关上可以作限流<br>
+               OpenFeign;简化服务间 HTTP 调用，默认集成 Ribbon 实现负载均衡。<br>
+               Hystrix;统一的熔断器抽象层<br>
+          </van-collapse-item>
+          <van-collapse-item title="什么是服务降级" name="2">
+              在系统资源不足、依赖服务故障或高并发压力下，暂时关闭非核心功能或返回预设的简化结果<br>
+              服务降级作用：<br>
+              1.防止系统崩溃<br>
+              2.保障核心功能<br>
+              3.快速失败
+          </van-collapse-item>
+        </van-collapse>
+        <van-collapse v-show="active == 6" v-model="activeName" accordion>
           <van-collapse-item title="Redis和Mysql数据不一致" name="1">
           </van-collapse-item>
           <van-collapse-item title="登陆模块的步骤" name="2">
@@ -326,6 +343,22 @@
                3. 可重用性；一个线程获得锁之后还可以获得锁，避免业务处理时间过长，导致锁超时而不可以再次获取。<br>
                4. 非阻塞性；避免无限等待获取锁，造成阻塞，影响系统性能<br>
                5. 超时释放；避免死锁，超时后自动释放锁。<br>
+          </van-collapse-item>
+          <van-collapse-item title="哪些条件下,rabbitMq消息会进入到死信队列" name="8">
+               1.消息过期<br>
+               2.消息被拒，且无法重回队列<br>
+               3.消息到达最大长度<br>
+               4.消息无法被路由到目标队列
+          </van-collapse-item>
+          <van-collapse-item title="雪花id如何保障在分布式系统中不重复" name="9">
+               雪花id由是由机器id、时间戳、序列号组成。每台服务器都有唯一的机器id，时间戳和序列号保障了在每毫秒可以生成4096个不同的id。
+          </van-collapse-item>
+          <van-collapse-item title="冒泡算法实现" name="10">
+                通过n-1循环，然后循环都从第一个元素开始，比较相邻的两个元素大小，如果大于交换位置，直到最后一个元素。这样每一次循环。
+                最大元素排在最后一位。循环n-1次完成排序。
+          </van-collapse-item>
+          <van-collapse-item title="哪些场景下会出现OOM的情况" name="10">
+                1.
           </van-collapse-item>
         </van-collapse>
       </van-col>
